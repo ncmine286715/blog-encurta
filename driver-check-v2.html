@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnóstico de Hardware e Performance 2026 - MineAddonsNews</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8967995144964134" crossorigin="anonymous"></script>
+    <style>
+        :root { --primary: #47a025; --dark-bg: #0f0f0f; --card: #1a1a1a; --text: #e0e0e0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--dark-bg); color: var(--text); line-height: 1.8; margin: 0; padding: 0; }
+        
+        .top-nav { background: #000; padding: 15px; text-align: center; border-bottom: 2px solid var(--primary); position: sticky; top: 0; z-index: 1000; }
+        .progress-text { font-size: 0.85rem; font-weight: bold; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; }
+
+        .container { max-width: 850px; margin: 40px auto; background: var(--card); padding: 40px; border-radius: 8px; border: 1px solid #333; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        
+        h1 { color: var(--primary); font-size: 2rem; border-bottom: 1px solid #333; padding-bottom: 20px; }
+        .article-content { margin-top: 30px; text-align: justify; color: #bbb; }
+
+        /* MOLDURA DO SCANNER (Onde o clique acontece) */
+        .scanner-box { 
+            background: #111; border: 2px dashed #444; padding: 30px; margin: 40px 0; 
+            border-radius: 10px; text-align: center; transition: 0.3s;
+        }
+        .scanner-box:hover { border-color: var(--primary); background: #151515; }
+        .scanner-header { font-weight: bold; color: var(--primary); margin-bottom: 15px; font-size: 0.9rem; }
+        
+        .ad-container { min-height: 60px; margin: 20px 0; display: inline-block; width: 100%; }
+        
+        .status-indicator { font-size: 0.75rem; color: #666; margin-top: 15px; font-style: italic; }
+
+        .btn-next { 
+            display: none; background: var(--primary); color: #000; padding: 18px 40px; 
+            text-decoration: none; font-weight: bold; border-radius: 4px; text-transform: uppercase; 
+            margin-top: 30px; transition: 0.3s; 
+        }
+        .btn-next:hover { background: #3d8a1f; transform: scale(1.05); }
+
+        footer { text-align: center; padding: 40px; color: #555; font-size: 0.7rem; border-top: 1px solid #222; }
+    </style>
+</head>
+<body>
+
+<div class="top-nav">
+    <div class="progress-text" id="topStatus">Status: Aguardando Sincronização de Driver (15s)</div>
+</div>
+
+<div class="container">
+    <h1>Análise Técnica: Arquitetura de GPUs Blackwell e o Futuro do Path Tracing</h1>
+    
+    <div class="article-content">
+        <p>A transição para a era das GPUs de 3nm redefiniu os limites da renderização em tempo real. No ecossistema <strong>Minecraft Bedrock 1.21</strong>, a eficiência de processamento de shaders depende diretamente da largura de banda da memória <strong>GDDR7</strong>. Para garantir que os ativos de IA e os modelos táticos sejam injetados corretamente, nosso sistema de segurança verifica a assinatura do seu driver gráfico.</p>
+        
+        <p><i>[COLE O RESTANTE DO SEU ARTIGO DE 1000 PALAVRAS AQUI - Fale de Ryzen 7, VRAM, Cache L3 e Performance Técnica]</i></p>
+    </div>
+
+    <div class="scanner-box" id="scanner">
+        <div class="scanner-header">🛡️ CERTIFICADO DE COMPATIBILIDADE NVIDIA / AMD</div>
+        <p style="font-size: 0.8rem; color: #888;">Interaja com o certificado abaixo para validar sua assinatura de hardware e liberar a Etapa 2.</p>
+        
+        <div class="ad-container" onclick="validateClick()">
+            <script type="text/javascript">
+                atOptions = { 'key' : '56e3e9af7b7dd9de22d101367760face', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };
+            </script>
+            <script src="https://flaskledgeheadquarters.com/56e3e9af7b7dd9de22d101367760face/invoke.js"></script>
+        </div>
+
+        <div class="status-indicator" id="internalStatus">Aguardando interação com o driver de vídeo...</div>
+        
+        <a href="api-bridge-auth.html" id="nextBtn" class="btn-next">Sincronização Concluída - Ir para Etapa 2</a>
+    </div>
+
+    <div class="article-content">
+        <p><i>[COLE MAIS RECHEIO TÉCNICO AQUI - Fale de arrefecimento Rise Mode G800 e TPS de Servidores]</i></p>
+    </div>
+</div>
+
+<footer>
+    © 2026 MINEADDONSNEWS. Diagnóstico verificado para arquiteturas RTX série 50 e processadores de última geração.
+</footer>
+
+<script>
+    let timer = 15;
+    let userClicked = false;
+    const topStatus = document.getElementById('topStatus');
+    const internalStatus = document.getElementById('internalStatus');
+    const nextBtn = document.getElementById('nextBtn');
+
+    // Função de detecção de clique (Foco da Janela)
+    function validateClick() {
+        userClicked = true;
+        internalStatus.innerHTML = "<span style='color: var(--primary);'>✅ Driver Sincronizado com Sucesso!</span>";
+    }
+
+    // Monitora se o usuário clicou (perda de foco da aba)
+    window.onblur = function() {
+        userClicked = true;
+        internalStatus.innerHTML = "<span style='color: var(--primary);'>✅ Driver Sincronizado com Sucesso!</span>";
+    };
+
+    const countdown = setInterval(() => {
+        timer--;
+        topStatus.innerText = "Status: Analisando Requisitos de Hardware (" + timer + "s)";
+        
+        if (timer <= 0) {
+            clearInterval(countdown);
+            
+            if (userClicked) {
+                topStatus.innerText = "Sincronização Completa! Prossiga abaixo.";
+                nextBtn.style.display = "inline-block";
+            } else {
+                topStatus.innerHTML = "<span style='color: #ff4444;'>ERRO: Falha na Sincronização do Driver. Interaja com o certificado para validar.</span>";
+                timer = 5; // Reinicia 5s para forçar o clique
+            }
+        }
+    }, 1000);
+</script>
+
+</body>
+</html>
