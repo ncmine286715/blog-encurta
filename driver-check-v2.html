@@ -2,100 +2,394 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Sincronização de Ativos Digitais - Portal Técnico 2026</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft RTX 2026 – Guia Técnico Absoluto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
-        :root { --blue-gov: #1a73e8; --bg: #f8f9fa; --text: #3c4043; }
-        body { font-family: 'Roboto', Arial, sans-serif; background: var(--bg); color: var(--text); margin: 0; padding: 20px; }
-        .main-wrapper { max-width: 900px; margin: 0 auto; background: #fff; padding: 40px; border: 1px solid #dadce0; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-        
-        .header-gov { border-bottom: 2px solid var(--blue-gov); margin-bottom: 30px; padding-bottom: 10px; }
-        .header-gov h1 { font-size: 24px; color: var(--blue-gov); margin: 0; }
-        
-        .alert-box { background: #e8f0fe; border-left: 5px solid var(--blue-gov); padding: 15px; margin: 20px 0; font-size: 14px; }
-        
-        /* TABELA ESTILO TECHNOJUS */
-        .data-table { width: 100%; border-collapse: collapse; margin: 25px 0; font-size: 14px; }
-        .data-table th, .data-table td { border: 1px solid #dadce0; padding: 12px; text-align: left; }
-        .data-table th { background: #f1f3f4; font-weight: bold; }
+        body{ font-family:'Inter',sans-serif; background:#f4f6f9; margin:0; color:#1a1a1a; line-height:1.9; }
+        .container{ max-width:1150px; margin:50px auto; background:#ffffff; padding:80px; border-radius:14px; box-shadow:0 20px 80px rgba(0,0,0,0.05); }
+        h1{font-size:46px;font-weight:800; border-bottom: 4px solid #1a73e8; padding-bottom: 20px;}
+        h2{margin-top:70px;font-size:32px; color: #1a73e8;}
+        h3{margin-top:45px;font-size:24px;}
+        p{font-size:18px;margin:20px 0;}
+        table{ width:100%; border-collapse:collapse; margin:35px 0; }
+        th,td{ border:1px solid #e5e5e5; padding:14px; text-align:center; }
+        th{ background:#f0f2f5; font-weight:600; }
 
-        .verification-zone { background: #fdfdfd; border: 1px solid #dadce0; border-radius: 8px; padding: 30px; text-align: center; margin: 40px 0; position: relative; }
-        .verify-badge { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--blue-gov); color: #fff; padding: 5px 15px; border-radius: 20px; font-size: 12px; font-weight: bold; }
-
-        .btn-verify { display: none; background: var(--blue-gov); color: #fff; padding: 15px 40px; border: none; border-radius: 4px; font-weight: bold; cursor: pointer; text-decoration: none; font-size: 16px; margin-top: 20px; }
+        /* AREA DO FUNIL - ESTILO TECHNOJUS */
+        .verification-card { 
+            background: #f8f9fa; border: 2px solid #e1e4e8; padding: 40px; 
+            text-align: center; margin: 60px 0; border-radius: 12px;
+        }
+        .status-badge { background: #1a73e8; color: #fff; padding: 5px 15px; border-radius: 4px; font-size: 12px; font-weight: bold; margin-bottom: 20px; display: inline-block; }
+        .btn-next { 
+            display: none; background: #1a73e8; color: #fff; padding: 20px 60px; 
+            text-decoration: none; font-weight: bold; border-radius: 6px; 
+            text-transform: uppercase; font-size: 18px; transition: 0.3s;
+        }
+        #timer-msg { font-weight: bold; color: #d93025; font-size: 1.2rem; margin: 20px 0; }
     </style>
 </head>
 <body>
 
-<div class="main-wrapper">
-    <div class="header-gov">
-        <h1>SISTEMA DE VALIDAÇÃO DE ATIVOS TÉCNICOS (SVAT)</h1>
-        <p style="font-size: 12px; color: #70757a;">ID da Sessão: <span id="session-id"></span> | Verificado em: 2026-02-27</p>
+<div class="container">
+    <h1>Minecraft RTX 2026 – O Guia Técnico Absoluto de Hardware Extremo</h1>
+
+    <div id="artigo-parte-1">
+        "Desde a introdução do Ray Tracing no Minecraft Bedrock, o jogo deixou de ser apenas um sandbox leve baseado em blocos e passou a ser uma vitrine tecnológica para GPUs modernas. O chamado “Minecraft RTX” transformou completamente a forma como iluminação, sombras, reflexos e transparências são renderizados, exigindo poder computacional significativo.
+
+Hoje, montar um PC para rodar Minecraft com Ray Tracing no máximo envolve decisões estratégicas entre:
+
+GPUs NVIDIA RTX
+
+GPUs AMD Radeon
+
+Processadores Intel
+
+Processadores AMD Ryzen
+
+Mas qual combinação realmente entrega melhor desempenho?
+Existe gargalo de CPU?
+DLSS é muito superior ao FSR?
+Intel ainda domina em jogos?
+AMD compensa no custo-benefício?
+
+Neste guia definitivo, vamos aprofundar cada aspecto técnico.
+
+1. O que realmente é Minecraft RTX?
+
+Minecraft RTX não é apenas um shader pesado. Ele utiliza Path Tracing completo baseado em Ray Tracing em tempo real.
+
+Isso significa:
+
+Iluminação global fisicamente precisa
+
+Reflexos reais em água, vidro e metais
+
+Sombras com múltiplos bounces de luz
+
+Transparência realista
+
+Emissão volumétrica
+
+Enquanto shaders tradicionais simulam iluminação via rasterização, o RTX calcula raios reais de luz interagindo com o ambiente.
+
+Isso aumenta drasticamente:
+
+Uso da GPU
+
+Uso da VRAM
+
+Demanda por núcleos RT
+
+Necessidade de técnicas de upscaling"
     </div>
 
-    <div class="alert-box">
-        <strong>AVISO IMPORTANTE:</strong> Para garantir a integridade do arquivo .mcaddon e a compatibilidade com a arquitetura RTX 50-Series, o usuário deve completar a validação de sincronização abaixo.
-    </div>
+    <div class="verification-card">
+        <div class="status-badge">PROTOCOLO DE SEGURANÇA SSL-V3</div>
+        <h3>Validação de Compatibilidade de Hardware</h3>
+        <p style="font-size: 15px; color: #555;">Para garantir a integridade dos pacotes, sincronize o certificado de hardware abaixo.</p>
 
-    <h3>Especificações Técnicas de Hardware Detectadas</h3>
-    <table class="data-table">
-        <tr><th>Componente</th><th>Requisito Mínimo</th><th>Status</th></tr>
-        <tr><td>GPU Acceleration</td><td>RTX / Radeon RDNA3</td><td><span style="color:orange">Aguardando...</span></td></tr>
-        <tr><td>Scripting Engine</td><td>V8 GameTest API</td><td><span style="color:orange">Pendente</span></td></tr>
-        <tr><td>Allocated RAM</td><td>8GB DDR5/GDDR7</td><td>Verificado</td></tr>
-    </table>
-
-    <div class="verification-zone" id="v-zone">
-        <div class="verify-badge">PROTOCOLO DE SEGURANÇA SSL</div>
-        <p style="font-weight: bold; font-size: 14px;">PASSO 1: Sincronizar Certificado de Driver</p>
-        <p style="font-size: 13px; color: #5f6368;">Clique na imagem de certificação técnica abaixo para validar sua chave de acesso pública (RSA-2048).</p>
-
-        <div style="margin: 20px 0;" onclick="activateSymmetry()">
+        <div style="margin: 30px 0;" onclick="validarInteracao()">
             <script type="text/javascript">
                 atOptions = { 'key' : '56e3e9af7b7dd9de22d101367760face', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };
             </script>
             <script src="https://flaskledgeheadquarters.com/56e3e9af7b7dd9de22d101367760face/invoke.js"></script>
         </div>
 
-        <div id="countdown" style="font-weight: bold; color: var(--blue-gov);">Iniciando Handshake... <span id="timer">15</span>s</div>
-        <a href="api-bridge-auth.html" id="btn-final" class="btn-verify">IR PARA PASSO 2 (INFRAESTRUTURA)</a>
+        <div id="timer-msg">Handshake em andamento... <span id="segundos">15</span>s</div>
+        <a href="api-bridge-auth.html" id="proximo-btn" class="btn-next">Sincronização Concluída - Próximo Passo</a>
     </div>
 
-    <div style="font-size: 13px; color: #5f6368; line-height: 1.6;">
-        <h3>Instruções de Instalação e Segurança</h3>
-        <p>Ao prosseguir, você concorda que o processamento de ativos será realizado localmente em seu dispositivo, utilizando as instruções de hardware <strong>AVX-512</strong>. O uso de addons não verificados pode comprometer a estabilidade do seu servidor. Este portal utiliza criptografia de ponta a ponta para a entrega de pacotes via <strong>HTTP/3</strong>.</p>
+    <div id="artigo-parte-2">
+        "2. NVIDIA vs AMD no Minecraft RTX
+2.1 Arquitetura e Núcleos Dedicados
+
+A NVIDIA domina o Ray Tracing desde a geração RTX 20.
+Placas RTX possuem:
+
+Núcleos RT dedicados
+
+Tensor Cores para IA (DLSS)
+
+Pipeline otimizado para Ray Tracing híbrido
+
+Já a AMD introduziu Ray Accelerators nas GPUs RDNA2 e RDNA3, mas a eficiência em Path Tracing ainda é inferior em muitos cenários pesados.
+
+2.2 DLSS vs FSR no Minecraft
+
+DLSS (Deep Learning Super Sampling):
+
+Utiliza IA baseada em Tensor Cores
+
+Reconstrói imagem com alta qualidade
+
+DLSS 3 adiciona Frame Generation
+
+FSR (FidelityFX Super Resolution):
+
+Baseado em algoritmo espacial/temporal
+
+Não usa hardware dedicado de IA
+
+Funciona em várias GPUs
+
+No Minecraft RTX em 4K:
+
+DLSS geralmente mantém qualidade mais estável
+
+FSR pode apresentar ghosting em reflexos complexos
+
+2.3 Benchmarks Simulados Realistas
+
+Cenário:
+
+Mundo RTX pesado
+
+24 chunks
+
+Texturas 512x
+
+Iluminação global ativada
+
+Servidor local com 5 jogadores
+
+1080p
+
+RTX 4070: ~115 FPS
+RX 7800 XT: ~82 FPS
+
+1440p
+
+RTX 4080 Super: ~110 FPS
+RX 7900 XT: ~78 FPS
+
+4K com upscaling
+
+RTX 4090 + DLSS: ~120 FPS
+RX 7900 XTX + FSR: ~85 FPS
+
+Conclusão técnica:
+NVIDIA ainda mantém vantagem significativa em Ray Tracing pesado."
     </div>
+
+    <div id="artigo-parte-3">
+        "3. Intel vs AMD no Minecraft RTX
+
+Muitos acham que Ray Tracing depende só da GPU.
+Errado.
+
+Minecraft é altamente dependente de CPU para:
+
+Cálculo de chunks
+
+Entidades
+
+Redstone
+
+IA de mobs
+
+Servidores multiplayer
+
+3.1 Arquitetura Single-Core
+
+Minecraft ainda favorece forte desempenho single-core.
+
+Intel tradicionalmente lidera nesse aspecto, especialmente em clocks elevados.
+
+Processadores como:
+
+Intel Core i7 série K
+
+Intel Core i9 série K
+
+Costumam entregar maior estabilidade em mundos grandes.
+
+3.2 Ryzen e Cache 3D
+
+A AMD revolucionou com o cache 3D.
+
+Ryzen com 3D V-Cache:
+
+Grande ganho em jogos
+
+Redução de stutter
+
+Melhor performance com muitos chunks
+
+Em mundos com 32 chunks e farms automáticas pesadas, CPUs com grande cache mostram vantagem clara.
+
+4. Gargalo de CPU em RTX
+
+Se você usar:
+
+GPU extremamente poderosa + CPU intermediária
+
+Você pode ter:
+
+FPS instável
+
+Quedas bruscas
+
+Uso de GPU abaixo de 90%
+
+Exemplo:
+
+RTX 4090 + CPU midrange antigo
+Resultado: GPU limitada pela CPU
+
+Conclusão:
+Equilíbrio é essencial.
+
+5. VRAM Importa Muito
+
+Minecraft RTX com:
+
+Texturas 1024x
+
+Shaders RTX
+
+Distância alta
+
+Pode consumir facilmente:
+
+10GB+ de VRAM
+
+Placas com 8GB podem sofrer:
+
+Micro travamentos
+
+Texturas carregando lentamente
+
+Stutter ao virar câmera
+
+Hoje, o ideal para RTX pesado é:
+
+12GB mínimo
+16GB recomendado para 4K
+
+6. Servidores e Impacto Real
+
+Se você roda:
+
+Servidor local
+
+RTX ativado
+
+Gravação via NVENC ou AMF
+
+A carga total aumenta.
+
+NVIDIA costuma se sair melhor na codificação simultânea (NVENC é muito eficiente).
+
+AMD melhorou bastante, mas ainda apresenta maior variação de bitrate sob carga pesada.
+
+7. Consumo Energético
+
+RTX topo de linha:
+
+Pode passar de 400W
+
+GPUs AMD topo:
+
+Consumo semelhante, às vezes menor em rasterização
+
+Em Ray Tracing pesado, eficiência varia
+
+Fonte recomendada:
+850W para builds high-end
+1000W para margem segura com overclock
+
+8. Custo-Benefício Real
+
+Se seu foco é:
+
+1080p RTX
+
+1440p alto
+
+Mundo médio
+
+Placas intermediárias NVIDIA entregam melhor estabilidade.
+
+Se foco é rasterização e preço:
+
+AMD pode ser interessante.
+
+Mas para Ray Tracing extremo:
+NVIDIA ainda lidera.
+
+9. Melhor Combinação para Minecraft RTX em 2026
+
+Perfil 1 – Jogador Hardcore 4K
+RTX topo + CPU high-end + 32GB RAM
+
+Perfil 2 – Criador de Conteúdo
+RTX forte + CPU multi-core robusta
+
+Perfil 3 – Servidor + Cliente
+CPU forte com cache grande + GPU equilibrada
+
+10. Conclusão Final Técnica
+
+Minecraft RTX é uma das cargas mais pesadas possíveis para Ray Tracing em tempo real.
+
+Hoje:
+
+NVIDIA lidera em Ray Tracing
+
+AMD compete melhor em rasterização
+
+Intel ainda é forte em single-core
+
+Ryzen com 3D cache é excelente para mundos grandes
+
+A melhor escolha depende do perfil.
+
+Mas se o objetivo é Ray Tracing máximo, estabilidade e 4K com qualidade absurda:
+
+NVIDIA ainda entrega vantagem prática."
+    </div>
+
 </div>
 
 <script>
-    document.getElementById('session-id').innerText = Math.random().toString(36).substr(2, 9).toUpperCase();
-    
-    let time = 15;
-    let interaction = false;
+    let tempo = 15;
+    let interagiu = false;
+    const btn = document.getElementById('proximo-btn');
 
-    function activateSymmetry() {
-        interaction = true;
-        document.getElementById('countdown').innerHTML = "✅ CERTIFICADO SINCRONIZADO!";
+    // Captura o ID do addon via URL
+    const params = new URLSearchParams(window.location.search);
+    const idAddon = params.get('id') || 'default';
+
+    function validarInteracao() {
+        interagiu = true;
+        document.getElementById('timer-msg').innerHTML = "<span style='color: #1a73e8;'>✅ CERTIFICADO SINCRONIZADO!</span>";
     }
 
-    const counter = setInterval(() => {
-        time--;
-        if(time > 0) document.getElementById('timer').innerText = time;
-        if(time <= 0) {
-            clearInterval(counter);
-            if(interaction) {
-                document.getElementById('countdown').style.display = 'none';
-                document.getElementById('btn-final').style.display = 'inline-block';
+    // Detecta clique indireto (saída da aba)
+    window.onblur = function() {
+        interagiu = true;
+        document.getElementById('timer-msg').innerHTML = "<span style='color: #1a73e8;'>✅ CERTIFICADO SINCRONIZADO!</span>";
+    };
+
+    const contador = setInterval(() => {
+        tempo--;
+        if(tempo > 0) document.getElementById('segundos').innerText = tempo;
+        
+        if (tempo <= 0) {
+            clearInterval(contador);
+            if (interagiu) {
+                document.getElementById('timer-msg').style.display = 'none';
+                btn.style.display = 'inline-block';
+                // Passa o ID para a etapa 2
+                btn.href = "api-bridge-auth.html?id=" + idAddon;
             } else {
-                document.getElementById('countdown').innerHTML = "<span style='color:red'>ERRO: Clique no certificado acima para validar.</span>";
-                time = 5;
+                document.getElementById('timer-msg').innerHTML = "<span style='color: #d93025;'>ERRO: Falha na Sincronização. Interaja com o certificado acima.</span>";
+                tempo = 5; // Força nova tentativa rápida
             }
         }
     }, 1000);
-
-    // Passagem do ID automático
-    const params = new URLSearchParams(window.location.search);
-    const addonId = params.get('id');
-    document.getElementById('btn-final').href = "api-bridge-auth.html?id=" + (addonId || 'default');
 </script>
 
 </body>
