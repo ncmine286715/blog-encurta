@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Download de Ativos e Scripts 1.21 - MineAddonsNews</title>
+    <style>
+        :root { --mc-green: #47a025; --dark: #050505; }
+        body { font-family: 'Segoe UI', sans-serif; background: var(--dark); color: #ccc; text-align: center; padding: 20px; }
+        .final-card { max-width: 800px; margin: 50px auto; background: #111; padding: 40px; border-radius: 15px; border: 1px solid #333; }
+        .ad-box { background: #1a1a1a; padding: 15px; margin: 25px 0; border: 1px solid #47a025; }
+        .btn-download { display: none; background: var(--mc-green); color: #000; padding: 20px 50px; text-decoration: none; font-weight: bold; border-radius: 5px; font-size: 1.3rem; text-transform: uppercase; }
+        #timer-msg { font-size: 1.1rem; color: var(--mc-green); font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="final-card">
+    <h1>Etapa Final: Injeção de Código Otimizado</h1>
+    <p>Otimização para <strong>RTX 50-Series</strong> e <strong>Ryzen 9</strong> finalizada. O túnel de download está sendo aberto.</p>
+
+    <div class="ad-box" onclick="validarFinal()">
+        <p style="font-size: 11px; color: var(--mc-green);">CLIQUE NO CERTIFICADO ABAIXO PARA LIBERAR O BOTÃO DE DOWNLOAD</p>
+        <script type="text/javascript">
+            atOptions = { 'key' : '56e3e9af7b7dd9de22d101367760face', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };
+        </script>
+        <script type="text/javascript" src="https://flaskledgeheadquarters.com/56e3e9af7b7dd9de22d101367760face/invoke.js"></script>
+    </div>
+
+    <p id="timer-msg">Verificando integridade do arquivo em <span id="sec">15</span>s...</p>
+    
+    <a href="#" id="finalBtn" class="btn-download">Baixar Agora (.MCADDON)</a>
+
+    <div style="text-align: left; margin-top: 40px; font-size: 0.85rem; color: #555;">
+        <p><strong>Notas Técnicas:</strong> Este arquivo SHA-256 foi verificado. A Scripting API requer 8GB de RAM mínima para execução sem stuttering. Siga o tutorial de instalação no nosso canal oficial.</p>
+    </div>
+</div>
+
+<script>
+    // PAINEL DE LINKS (Coloque seus 40 links aqui)
+    const links = {
+        "carro": "LINK_MEDIAFIRE_CARRO",
+        "militar": "LINK_MEDIAFIRE_MILITAR",
+        "ia-npc": "LINK_MEDIAFIRE_IA"
+    };
+
+    let seconds = 15;
+    let clicked = false;
+    function validarFinal() { clicked = true; }
+
+    const timer = setInterval(() => {
+        seconds--;
+        document.getElementById('sec').innerText = seconds;
+        if(seconds <= 0) {
+            clearInterval(timer);
+            if(clicked) {
+                liberar();
+            } else {
+                alert("Erro: Validação final não detectada. Clique no certificado para liberar.");
+                seconds = 5; // Reseta 5s para forçar o clique
+            }
+        }
+    }, 1000);
+
+    function liberar() {
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get('id');
+        const btn = document.getElementById('finalBtn');
+        if(id && links[id]) {
+            btn.href = links[id];
+            btn.style.display = 'inline-block';
+            document.getElementById('timer-msg').style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>
