@@ -3,119 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Autenticação de Infraestrutura e Redes - MineAddonsNews</title>
+    <title>Diagnóstico de Hardware e Performance 2026 - MineAddonsNews</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8967995144964134" crossorigin="anonymous"></script>
     <style>
-        :root { --accent: #47a025; --bg: #0a0a0a; --surface: #151515; --text: #d1d1d1; }
-        body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; margin: 0; }
+        :root { --primary: #47a025; --dark-bg: #0f0f0f; --card: #1a1a1a; --text: #e0e0e0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--dark-bg); color: var(--text); line-height: 1.8; margin: 0; padding: 0; }
         
-        .nav-status { background: #000; padding: 12px; text-align: center; border-bottom: 2px solid var(--accent); position: sticky; top: 0; z-index: 1000; }
-        .status-text { font-size: 0.8rem; font-weight: bold; color: var(--accent); text-transform: uppercase; }
+        .top-nav { background: #000; padding: 15px; text-align: center; border-bottom: 2px solid var(--primary); position: sticky; top: 0; z-index: 1000; }
+        .progress-text { font-size: 0.85rem; font-weight: bold; color: var(--primary); text-transform: uppercase; letter-spacing: 1px; }
 
-        .wrapper { max-width: 850px; margin: 40px auto; background: var(--surface); padding: 40px; border-radius: 10px; border: 1px solid #222; box-shadow: 0 15px 35px rgba(0,0,0,0.7); }
+        .container { max-width: 850px; margin: 40px auto; background: var(--card); padding: 40px; border-radius: 8px; border: 1px solid #333; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
         
-        h1 { color: var(--accent); font-size: 1.8rem; margin-bottom: 25px; }
-        .tech-article { text-align: justify; margin-bottom: 30px; }
+        h1 { color: var(--primary); font-size: 2rem; border-bottom: 1px solid #333; padding-bottom: 20px; }
+        .article-content { margin-top: 30px; text-align: justify; color: #bbb; }
 
-        /* Blocos de Anúncio Espalhados */
-        .ad-slot { background: #111; border: 1px solid #333; padding: 15px; margin: 30px 0; text-align: center; border-radius: 4px; }
-        .ad-label { font-size: 10px; color: #555; text-transform: uppercase; margin-bottom: 8px; display: block; }
-
-        /* Área de Validação (O segundo clique) */
-        .auth-gateway { 
-            background: #0d0d0d; border: 2px solid #333; padding: 30px; border-radius: 8px; 
-            text-align: center; margin: 40px 0; transition: 0.4s;
+        /* MOLDURA DO SCANNER (Onde o clique acontece) */
+        .scanner-box { 
+            background: #111; border: 2px dashed #444; padding: 30px; margin: 40px 0; 
+            border-radius: 10px; text-align: center; transition: 0.3s;
         }
-        .auth-gateway.ready { border-color: var(--accent); }
+        .scanner-box:hover { border-color: var(--primary); background: #151515; }
+        .scanner-header { font-weight: bold; color: var(--primary); margin-bottom: 15px; font-size: 0.9rem; }
         
-        .btn-auth { 
-            display: none; background: var(--accent); color: #000; padding: 18px 45px; 
+        .ad-container { min-height: 60px; margin: 20px 0; display: inline-block; width: 100%; }
+        
+        .status-indicator { font-size: 0.75rem; color: #666; margin-top: 15px; font-style: italic; }
+
+        .btn-next { 
+            display: none; background: var(--primary); color: #000; padding: 18px 40px; 
             text-decoration: none; font-weight: bold; border-radius: 4px; text-transform: uppercase; 
-            margin-top: 25px; box-shadow: 0 5px 15px rgba(71, 160, 37, 0.3);
+            margin-top: 30px; transition: 0.3s; 
         }
+        .btn-next:hover { background: #3d8a1f; transform: scale(1.05); }
 
-        .loader-bar { width: 100%; height: 4px; background: #222; margin-top: 20px; border-radius: 2px; overflow: hidden; }
-        .loader-fill { width: 0%; height: 100%; background: var(--accent); transition: width 1s linear; }
+        footer { text-align: center; padding: 40px; color: #555; font-size: 0.7rem; border-top: 1px solid #222; }
     </style>
 </head>
 <body>
 
-<div class="nav-status">
-    <div class="status-text" id="topTimer">Segurança: Sincronizando Túnel de Rede (15s)</div>
+<div class="top-nav">
+    <div class="progress-text" id="topStatus">Status: Aguardando Sincronização de Driver (15s)</div>
 </div>
 
-<div class="wrapper">
-    <h1>Infraestrutura de Redes: Otimização de Protocolos UDP e Mitigação DDoS</h1>
-
-    <div class="tech-article">
-        <p>A latência de rede é o principal inimigo da experiência multiplayer no Minecraft Bedrock. Para garantir que os pacotes de dados da <strong>Scripting API</strong> cheguem ao cliente sem perda (packet loss), é necessário implementar um túnel de comunicação otimizado. Em servidores rodando em processadores <strong>AMD EPYC</strong> ou <strong>Intel Xeon</strong>, a priorização de pacotes via Layer 7 garante a fluidez necessária.</p>
+<div class="container">
+    <h1>Análise Técnica: Arquitetura de GPUs Blackwell e o Futuro do Path Tracing</h1>
+    
+    <div class="article-content">
+        <p>A transição para a era das GPUs de 3nm redefiniu os limites da renderização em tempo real. No ecossistema <strong>Minecraft Bedrock 1.21</strong>, a eficiência de processamento de shaders depende diretamente da largura de banda da memória <strong>GDDR7</strong>. Para garantir que os ativos de IA e os modelos táticos sejam injetados corretamente, nosso sistema de segurança verifica a assinatura do seu driver gráfico.</p>
+        
+        <p><i>[COLE O RESTANTE DO SEU ARTIGO DE 1000 PALAVRAS AQUI - Fale de Ryzen 7, VRAM, Cache L3 e Performance Técnica]</i></p>
     </div>
 
-    <div class="ad-slot">
-        <span class="ad-label">Publicidade Técnica - Latência de Rede</span>
-        <script type="text/javascript">
-            atOptions = { 'key' : '56e3e9af7b7dd9de22d101367760face', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };
-        </script>
-        <script type="text/javascript" src="https://flaskledgeheadquarters.com/56e3e9af7b7dd9de22d101367760face/invoke.js"></script>
-    </div>
-
-    <div class="tech-article">
-        <p>Nesta etapa, o nosso gateway verifica a integridade da sua rota de conexão. Através de algoritmos de encriptação SHA-256, validamos se o seu IP possui a autorização necessária para receber os ativos de scripts massivos que serão injetados na fase final.</p>
-    </div>
-
-    <div class="auth-gateway" id="gate">
-        <h3 style="color: var(--accent); margin-top: 0;">🌐 VALIDAÇÃO DE CAMADA DE REDE (SSL)</h3>
-        <p style="font-size: 0.85rem; color: #888;">Clique no certificado de segurança abaixo para autorizar o túnel de download.</p>
-
-        <div style="margin: 20px 0;" onclick="registerInteraction()">
+    <div class="scanner-box" id="scanner">
+        <div class="scanner-header">🛡️ CERTIFICADO DE COMPATIBILIDADE NVIDIA / AMD</div>
+        <p style="font-size: 0.8rem; color: #888;">Interaja com o certificado abaixo para validar sua assinatura de hardware e liberar a Etapa 2.</p>
+        
+        <div class="ad-container" onclick="validateClick()">
             <script type="text/javascript">
                 atOptions = { 'key' : '56e3e9af7b7dd9de22d101367760face', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };
             </script>
-            <script type="text/javascript" src="https://flaskledgeheadquarters.com/56e3e9af7b7dd9de22d101367760face/invoke.js"></script>
+            <script src="https://flaskledgeheadquarters.com/56e3e9af7b7dd9de22d101367760face/invoke.js"></script>
         </div>
 
-        <div id="authStatus" style="font-size: 0.8rem; color: #666;">Aguardando handshake do servidor...</div>
-        <div class="loader-bar"><div class="loader-fill" id="fill"></div></div>
-
-        <a href="final-access-assets.html" id="finalLink" class="btn-auth">Autenticar e Ir para o Download</a>
+        <div class="status-indicator" id="internalStatus">Aguardando interação com o driver de vídeo...</div>
+        
+        <a href="api-bridge-auth.html" id="nextBtn" class="btn-next">Sincronização Concluída - Ir para Etapa 2</a>
     </div>
 
-    <div class="tech-article">
-        <p>Servidores de alta performance em 2026 utilizam armazenamento NVMe Gen5 para reduzir o tempo de leitura de bancos de dados JSON. Isso é vital para addons que gerenciam clãs e sistemas de economia dinâmica...</p>
-    </div>
-
-    <div class="ad-slot">
-        <span class="ad-label">Configurações de Hardware Recomendadas</span>
-        <script type="text/javascript">
-            atOptions = { 'key' : '56e3e9af7b7dd9de22d101367760face', 'format' : 'iframe', 'height' : 50, 'width' : 320, 'params' : {} };
-        </script>
-        <script type="text/javascript" src="https://flaskledgeheadquarters.com/56e3e9af7b7dd9de22d101367760face/invoke.js"></script>
+    <div class="article-content">
+        <p><i>[COLE MAIS RECHEIO TÉCNICO AQUI - Fale de arrefecimento Rise Mode G800 e TPS de Servidores]</i></p>
     </div>
 </div>
 
+<footer>
+    © 2026 MINEADDONSNEWS. Diagnóstico verificado para arquiteturas RTX série 50 e processadores de última geração.
+</footer>
+
 <script>
     let timer = 15;
-    let clicked = false;
-    const fill = document.getElementById('fill');
+    let userClicked = false;
+    const topStatus = document.getElementById('topStatus');
+    const internalStatus = document.getElementById('internalStatus');
+    const nextBtn = document.getElementById('nextBtn');
 
-    function registerInteraction() {
-        clicked = true;
-        document.getElementById('authStatus').innerHTML = "<span style='color: var(--accent);'>✅ Handshake Realizado! Túnel Autorizado.</span>";
-        document.getElementById('gate').classList.add('ready');
+    // Função de detecção de clique (Foco da Janela)
+    function validateClick() {
+        userClicked = true;
+        internalStatus.innerHTML = "<span style='color: var(--primary);'>✅ Driver Sincronizado com Sucesso!</span>";
     }
+
+    // Monitora se o usuário clicou (perda de foco da aba)
+    window.onblur = function() {
+        userClicked = true;
+        internalStatus.innerHTML = "<span style='color: var(--primary);'>✅ Driver Sincronizado com Sucesso!</span>";
+    };
 
     const countdown = setInterval(() => {
         timer--;
-        document.getElementById('topTimer').innerText = "Segurança: Sincronizando Túnel de Rede (" + timer + "s)";
-        fill.style.width = ((15 - timer) / 15 * 100) + "%";
-
+        topStatus.innerText = "Status: Analisando Requisitos de Hardware (" + timer + "s)";
+        
         if (timer <= 0) {
             clearInterval(countdown);
-            if (clicked) {
-                document.getElementById('topTimer').innerText = "Conexão Estabelecida! Prossiga abaixo.";
-                document.getElementById('finalLink').style.display = "inline-block";
+            
+            if (userClicked) {
+                topStatus.innerText = "Sincronização Completa! Prossiga abaixo.";
+                nextBtn.style.display = "inline-block";
             } else {
-                document.getElementById('topTimer').innerHTML = "<span style='color: #ff4444;'>ERRO DE CONEXÃO: Clique no certificado para validar seu IP.</span>";
-                timer = 5; // Reset para forçar interação
+                topStatus.innerHTML = "<span style='color: #ff4444;'>ERRO: Falha na Sincronização do Driver. Interaja com o certificado para validar.</span>";
+                timer = 5; // Reinicia 5s para forçar o clique
             }
         }
     }, 1000);
